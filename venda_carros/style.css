@@ -1,0 +1,146 @@
+/* reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0EBF8;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+
+p, label {
+    color: #444;
+}
+
+input {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #CCC;
+    padding: 10px 0px;
+}
+
+input[type=text], input[type=number], input[type=date], input[type=file] {
+    width: 70%;
+}
+
+textarea {
+    padding: 10px 5px;
+    width: 70%;
+}
+
+/* Cabeçalho da página */
+.header {
+    height: 80px;
+    padding: 20px;
+    background-color: #673AB7;
+}
+
+.header h3 {
+    color: #FFF;
+    margin-top: 0;
+}
+
+/* Container do formulário */
+.form-container {
+    background-color: #FFF;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -62px;
+}
+
+/* Cabeçalho do formulário */
+.form-header {
+    border-bottom: 1px solid #DFDFDF;
+    height: 45px;
+}
+
+.form-header p {
+    color: #673AB7;
+    border-bottom: 2px solid #673AB7;
+    width: 100px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+/* Corpo do formulário */
+.form-body {
+    padding: 30px;
+}
+
+.form-title {
+    margin: 0;
+}
+
+.required-field {
+    color: #D80835;
+}
+
+.box-input {
+    margin-bottom: 30px;
+}
+
+.block {
+    display: block;
+}
+
+.optional_box {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.optional_list {
+    padding-left: 0;
+}
+
+.optional_list li {
+    list-style: none;
+}
+
+.btn-submit {
+    background-color: #673AB7;
+    color: #FFF;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-submit:hover {
+    background-color: #FFF;
+    border-color: #673AB7;
+    color: #673AB7;
+}
+
+/* Estilo para o campo de upload de imagens */
+input[type="file"] {
+    width: 70%;
+    padding: 5px 0;
+}
+
+/* Estilo para as caixas de seleção de opcionais */
+.optional_box {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.optional_list li {
+    display: inline-block;
+    width: 45%;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        top: 0;
+    }
+    input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea { width: 100%;}
